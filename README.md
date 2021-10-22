@@ -26,3 +26,25 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # sample-app
+
+# Alternativeky use the docker file to run the application.
+## To build the docker file.
+
+docker build --tag login-soft-exp .
+
+## To see the docker images in the host machine
+
+docker images ls
+
+## To check the details of our running container
+
+docker ps
+
+## To run the docker container in locally.
+
+docker run -d -p 4200:80 login-soft-exp:latest
+
+## To stop the docker container
+
+docker stop -t 60 <containerId>
+
